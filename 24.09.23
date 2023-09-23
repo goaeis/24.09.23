@@ -1,1 +1,22 @@
+import random
 
+print ('Добро пожаловать')
+
+choice = input('Выберите свою сторону (Орёл или Решка):')
+
+num = random.randint(1,2)
+
+if num == 1:
+    result = 'Орёл'
+    
+elif num == 2:
+    result = 'Решка'
+    
+
+if choice == result:
+    print('Отличная работа! Ты выиграл. Победитель -', result)
+
+else:
+    print('Оу ... Ты проиграл. Победитель -', result)
+    
+print('Спасибо за игру. Пока')
